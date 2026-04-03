@@ -5,21 +5,8 @@ through a 3-layer hybrid pipeline — Regex, BERT, and LLM — using the
 cheapest and fastest method for each log type.
 
 ## Architecture
-```
-Log Message
-    │
-    ▼
-Regex Classification ──► Fixed pattern? ──► System Notification
-    │                                        User Action
-    │ Unknown                                HTTP Status
-    ▼
-BERT + LogisticRegression ──► Enough data + confident? ──► Security Alert
-    │                                                        Error
-    │ Low confidence or rare class                           Resource Usage
-    ▼                                                        Critical Error
-LLM (Groq llama-3.3-70b) ──────────────────────────────► Workflow Error
-                                                            Deprecation Warning
-```
+\<img width="900" height="820" alt="architecture" src="https://github.com/user-attachments/assets/c3fc36d9-7ac4-4299-9255-570814d3820e" />
+
 
 ## Tech Stack
 
