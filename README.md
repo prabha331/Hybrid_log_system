@@ -5,14 +5,14 @@ through a 3-layer hybrid pipeline — Regex, BERT, and LLM — using the
 cheapest and fastest method for each log type.
 
 ## Architecture
-\<img width="900" height="820" alt="architecture" src="https://github.com/user-attachments/assets/c3fc36d9-7ac4-4299-9255-570814d3820e" />
-
+<img width="900" height="820" alt="architecture" src="https://github.com/user-attachments/assets/b84a7edc-d977-40e5-af03-2b8bee2788ff" />
 
 ## Tech Stack
 
 | Layer | Technology |
 |---|---|
 | Regex | Python `re` module |
+
 | ML Classifier | HuggingFace BERT + Sklearn LogisticRegression |
 | LLM | Groq API — llama-3.3-70b-versatile |
 | Backend | FastAPI + Uvicorn |
